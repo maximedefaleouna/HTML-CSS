@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #height{
+            line-height: 40px;
+        }
+        p{
+            border: 1px solid red;
+        }
+        span{
+            text-shadow: -2px 2px 2px orange;
+        }
+        #l-spacing{
+            letter-spacing: 5px;
+            text-align: right;
+        }
+        #l-spacing-neg{
+            letter-spacing: -50px;
+            text-align: right;
+        }
+        #w-spacing{
+            word-spacing: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>
-        <mark>les espacas en css</mark>
+        <mark>les espaces en css</mark>
     </h1>
+    <h2><em>line-height</em></h2>
+    <p>il permet de definir l'espace entre deux lignes</p>
+    <p id="height">
+        <span>paragraphe avec un line-height de 40px</span>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, voluptatibus laudantium. Exercitationem quos modi officiis quae quisbr <br>
+         alias necessitatibus et, minus tempora hic quaerat cumque corrupti rerum unde ullam illo.
+    </p>
+    <p>
+        <span>paragraphe sans line-height</span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis recusandae atque explicabo ipsa. Ad eos earum exercitationem. Dolorem, praesentium facere? <br> Repudiandae deserunt itaque ut. Animi beatae totam ratione culpa.
+    </p>
+
+    <h2><em>letter spacing</em></h2>
+    <p>il permetde definir l'espace entre deux lettre</p>
+    <p id="l-spacing"><span>paragraphe de 5px de plus de letter-spacing</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi quidem incidunt omnis cupiditate aliquid ab ipsam natus dolores, deleniti, corrupti laudantium! Commodi amet quae quibusdam accusamus sint eum fugiat totam.</p>
+    <p id="l-spacing-neg">phrase inversé</p>
+    <p><span>paragraphe sans letter spacing</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum modi similique consequuntur minima quae a quia deleniti adipisci. Excepturi debitis repudiandae distinctio quam totam omnis dolorum eaque soluta minus in.</p>
+
+    <h2><em>world-spacing</em></h2>
+    <p>permet de definir l'espace entre 2 mots . il peut prendre des valeures negatives</p>
+    <p id="w-spacing"><span>world-spacing de 20px</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nisi sed, distinctio tenetur in iusto aliquid molestiae impedit eveniet pariatur id minus sapiente odit sunt similique reiciendis, modi libero neque?</p>
 </body>
 </html>
