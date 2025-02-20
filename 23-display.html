@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>la propriété display en css</title>
+    <style>
+        .inline p{
+            display: inline;
+            border: 1px solid red;
+        }
+        .block span{
+            display: block;
+            border: 1px solid red;
+        }
+        .inline-block p{
+            display: inline-block;
+            border: 1px solid red;
+            width: 40%;
+        }
+        h3{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <mark>Display</mark>
+    </h1>
+    <p>En html pas defaut , les éléments sont de type block ou inline , la propriété <Strong>display</Strong> va nous permettre de modifier cela</p>
+    <p>elle peut prendre la valeure inline , block , inline-block</p>
+    <h2><em>valeure inline</em></h2>
+    <div class="inline">
+        <p>paragraphe1 mis en display inline</p>
+        <p>paragraphe2 mis en display block</p>
+    </div><br><br>
+    <h2><em>valeure block</em></h2>
+    <div class="block">
+        <span>premier span</span>
+        <span>deuxieme span</span>
+    </div><br><br>
+    <h2><em>valeure inline-block</em></h2>
+    <p>il permet d'afficher les élémnets côte a côte tout en maitrissant leur largeure et taille</p>
+    <div class="inline-block">
+        <p>paragraphe en inline-block</p>
+        <p>paragraphe en inline-block</p>
+    </div><br><br>
+    <h2><em>valeure none</em></h2>
+
+    <p>il y a un titre non affiché en bas</p>
+    <h3>je ne serai pas affiché</h3>
+
+</body>
+</html>

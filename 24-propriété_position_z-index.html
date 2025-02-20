@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .absolute{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            position: absolute;
+            right: 5px;
+            color: white;
+            font-weight: 900;
+            padding: 10px;
+        }
+        .relative{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 30px;
+            padding: 10px;
+            color: white;
+            font-weight: 900;
+            background-color: black;
+        }
+        .sticky{
+            width: 200px;
+            height: 400px;
+            background-color: aliceblue;
+            overflow-y: scroll;
+            padding: 20px;
+        }
+        .sticky div{
+            background-color: orange;
+            width: 80px;
+            height: 100px;
+            margin: 5px;
+        }
+        #sticky{
+            position: sticky;
+            background-color: black;
+            top: 0;
+
+        }
+        h1{
+            position: fixed;
+            left: 30%;
+            right: 30%;
+        }
+        #rouge ,#bleu , #noire{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+        #rouge{
+            background-color: brown;
+            z-index: 100;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #noire{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <mark>la propriété position en css</mark>
+    </h1>
+    <h2><em>position static</em></h2>
+    <p>c'est la position par defaut , elle ne prend pas de top , left, ........</p>
+    <h2><em>position absolute</em></h2>
+    <p>elle fait sortir l'élémént du flux de la page et le positionné correctement grace au propriété top , rigth , left..</p>
+
+    <div class="absolute"><p>suis en absolute</p><p>je sorts du flux de la page</p></div>
+    <h2><em>position relative</em></h2>
+    <p>elle s comporte comme la position par defaut , sauf qu'on peut l'attribuer des top , left .............</p>
+    <p>il se positionne par rapport a son premier parent en position relative</p>
+    <div class="relative"><p>suis en relative</p><p>je sorts pas du fux de la page</p></div>
+    <h2><em>position fixed</em></h2>
+    <p>fixe l'élément même lors du scroll</p>
+    <p>le titre h1 a été fixé</p>
+    <p>il fait sortir de l'élémént aussi du flux de la page</p>
+    <h2><em>position sticky</em></h2>
+    <p>differe juste un petit peu de la position absolute</p>
+    <div class="sticky">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div id="sticky"></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <h2><em>Z-index</em></h2>
+    <p>quand les élément sortie du flux sont supperpossé , le z-index permet de definir l'élémént en haut</p>
+    <p>l'élément qui a le plus grand z-index est au dessus de tous les autres</p>
+    <div id="rouge"></div>
+    <div id="blue"></div>
+    <div id="noire"></div>
+
+    
+</body>
+</html>

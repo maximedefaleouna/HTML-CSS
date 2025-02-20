@@ -4,10 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>les bordures en css</title>
+    <style>
+        .bordure, .bordure2{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            margin: 20px;
+            border: solid 1px #03045e;
+            background-color: white;
+        }
+        .bordure2{
+            border-style: dotted ;
+            border-width: 3px;
+            border-color: #03045e;
+        }
+        .b-raduis1 , .b-raduis2{
+            width: 200px;
+            height: 200px;
+            border-radius: 50px;
+            background-color: white;
+            border: 1px solid #03045e;
+            margin: 20px;
+        }
+        .b-raduis2{
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
     <h1>
         <mark>Bordures en css</mark>
     </h1>
+    <p>la bordure separe le margin et le padding</p>
+    <div class="bordure"></div>
+    <div class="bordure2"></div>
+    <p>on peut aussi faire du border-right , ...-left , ...-top , ....-bottom</p>
+    <h2><em>border-raduis</em></h2>
+    <p>l permet de definr une bordure arrondit , il peut aussi être fait pour chaque côté</p>
+    <div class="b-raduis1"></div>
+    <div class="b-raduis2"></div>
 </body>
 </html>
