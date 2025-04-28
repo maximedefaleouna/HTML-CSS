@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dégradé lineaire</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+    }
+    code {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    div {
+      width: 200px;
+      height: 200px;
+      margin: 15px;
+    }
+    .item1 {
+      background: linear-gradient(red, orange, blue);
+    }
+    .item2 {
+      background: linear-gradient(90deg, yellow 30%, green, white, black);
+    }
+  </style>
+  <body>
+    <h1>
+      <mark>degradé linéraire</mark>
+    </h1>
+    <p>
+      Les dégradés se font sur les background . ca dire des éléménts qui ont des
+      couleures de fonds
+    </p>
+    <code> background: linear-gradient(direction, couleur1, couleur2); </code>
+    <p>Pour chaque couleure on peut preciser un pourcentage aussi</p>
+    <h3>
+      Quand on ne précise pas la direction ou l'angle par defaut un degradé se
+      fait du haut vers le bas
+    </h3>
+    <p>On peut preciser autant de couleures dans nos degradés</p>
+    <div class="item1"></div>
+    <div class="item2"></div>
+  </body>
+</html>

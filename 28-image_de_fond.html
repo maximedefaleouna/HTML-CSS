@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image de fond</title>
+    <style>
+      body {
+        background-image: url("images/image.jpg"), url("images/image2.jpg");
+        background-size: 30%;
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top left, bottom right;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <mark>les images de fond</mark>
+    </h1>
+    <p>
+      Quand on a plussieurs images de fond pour un élémént , pour chaque
+      propriété , on separe par une virgule les premiere propriété sont pour la
+      première image de fond
+    </p>
+    <p>
+      Quand elles ont tous même propriétés , la première inserré reste au dessus
+      et cache les autres
+    </p>
+  </body>
+</html>
